@@ -8,7 +8,7 @@ class UsersController < ApplicationController
   end
 
   def create
-  	@user = User.new(params[:user]) # not the final implementation
+  	@user = User.new(user_params) # not the final implementation
 
   	if @user.save
   		# add a flash message for symbol :success
