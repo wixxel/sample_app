@@ -11,6 +11,8 @@ class UsersController < ApplicationController
   	@user = User.new(user_params) # not the final implementation
 
   	if @user.save
+      # sign-in the new user
+      sign_in @user
   		# add a flash message for symbol :success
   		flash[:success] = "Welcome to the Sample App!"
   		# Handle the save
