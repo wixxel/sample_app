@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 class UsersController < ApplicationController
   def show
   	@user = User.find(params[:id])
@@ -29,7 +28,7 @@ class UsersController < ApplicationController
   	end
 
 end
-=======
+
 class UsersController < ApplicationController
   def show
   	@user = User.find_by(params[:id])
@@ -62,4 +61,4 @@ class UsersController < ApplicationController
   	end
 
 end
->>>>>>> sign-up
+
